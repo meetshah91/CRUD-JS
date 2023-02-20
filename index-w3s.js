@@ -111,25 +111,25 @@ function showDirector() {
     
   // }  
 }
-function showM() {
-  var actors = document.getElementById("displayActors");
-  actors.innerHTML = "";
-  actors.style.display = "block";
-  actors.appendChild(document.createElement("br"));
-  const M = new Set();
-  for (var i = 0; i < data.length; i++) {
-    if (!M.has(data[i].M)) {
+// function showM() {
+//   var actors = document.getElementById("displayActors");
+//   actors.innerHTML = "";
+//   actors.style.display = "block";
+//   actors.appendChild(document.createElement("br"));
+//   const M = new Set();
+//   for (var i = 0; i < data.length; i++) {
+//     if (!M.has(data[i].M)) {
 
-      M.add(data[i].M)
-      // var li = document.createElement("li");
-      // li.appendChild(document.createTextNode(data[i].M));
-      // actors.appendChild(li);  
+//       M.add(data[i].M)
+//       // var li = document.createElement("li");
+//       // li.appendChild(document.createTextNode(data[i].M));
+//       // actors.appendChild(li);  
       
-      actors.appendChild(createButton(data[i].M,"M"));
-    }
+//       actors.appendChild(createButton(data[i].M,"M"));
+//     }
     
-  }  
-}
+//   }  
+// }
 function showQ() {
   var actors = document.getElementById("displayActors");
   actors.innerHTML = "";
